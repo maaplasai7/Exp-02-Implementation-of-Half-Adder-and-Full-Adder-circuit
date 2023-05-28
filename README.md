@@ -34,21 +34,49 @@ Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin Carry = A
 Connect the supply (+5V) to the circuit
 Switch ON the main switch
 If the output is 1, then the led glows.
-### 
-Program:
-/*
+
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
+Developed by: M.Saidharshan
+RegisterNumber: 212222050049
+
+### Program:
+```
+module halfadder(a,b,sum,carry);
+input a,b;
+output sum carry;
+xor (sum,a,b,);
+and(carry,a,b);
+endmodule
+
+full adder
+program:
+module Fulladder(a,b,c,sum,carry);
+input a,b,c;
+output sum,carry;
+assign sum=((a^b)^c;
+assign carry-=((a&b)|(b&c)|(c&a));
+endmodule
+```
+
 Logic symbol & Truthtable
+![241402414-2647b3da-5bc0-497e-b0f7-8f4d53492db0](https://github.com/maaplasai7/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/134155273/8f8ab531-a9cb-4e8e-ba74-f3db0c4499f8)
+
 RTL realization
+![241402445-b641c909-45aa-4c9d-bcca-a5c4d50f56be](https://github.com/maaplasai7/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/134155273/1cb9dfb8-ba1d-42bd-80b8-79618b118b35)
+
 
 ### Output:
 ### RTL
+![b98fcf3d-c47f-4f1a-b1cc-d472d3192a34](https://github.com/maaplasai7/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/134155273/55b3214a-80fd-4baa-852e-d5bdd3fc8a4e)
+
+
+
 ### TIMING DIAGRAM
+![8f16a9d7-dcc6-4d56-9603-7c994293d8b1](https://github.com/maaplasai7/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/134155273/fe99326a-b07b-4f00-95a3-7bbfeca50b29)
+
 
 
 ### TRUTH TABLE 
 
 ### Result:
+The  experiment half and full adder experiment is submitted
